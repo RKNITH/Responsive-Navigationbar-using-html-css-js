@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+body {
+    background-color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #334155;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 44%;
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+ul li a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+ul li:not(:last-child) a:hover {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: #4ca8e1;
+    text-decoration-color: #fff;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 8px 20px;
+    border: none;
+    background: #4ca8e1;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #0091ff;
+}
+
+.active {
+    color: #0091ff;
+}
+
+.hamger .material-symbols-outlined {
+    font-size: 30px;
+    font-weight: 700;
+    display: none;
+
+}
+
+@media screen and (max-width:1024px) {
+    .hamger .material-symbols-outlined {
+        display: flex;
+        cursor: pointer;
+    }
+
+    ul {
+        display: none;
+    }
+
+    ul.ham {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #30363f;
+        height: 320px;
+        gap: 24px;
+
+
+    }
+
+}
